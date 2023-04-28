@@ -1,0 +1,131 @@
+body {
+  /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  background-color: black;
+  overflow: hidden;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  position: fixed;
+}
+
+li {
+  list-style: none;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #045daa;
+  color: white;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+
+.feature-title {
+  color: rgb(166, 205, 221);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(242, 244, 243, 0.951);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.024);
+  margin-bottom: 16px;
+}
+
+p {
+  color: rgb(166, 205, 221);
+}
+
+.centered {
+  text-align: center;
+}
+
+.chrome {
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 8rem;
+  font-style: italic;
+  font-weight: 700;
+  position: relative;
+  white-space: nowrap;
+
+  background-image: linear-gradient(#010012 20%, #4694c9 40%, #fdf9f7 50%, #010923 50%, #d7674f 60%, #ffc2a4 70%, #edb18c 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.2);
+}
+
+.chrome:before {
+  content: attr(data-text);
+  filter: url(#bevel);
+  background: linear-gradient(#ffffff 20%, #58bee4 30%, #204a68 50%, #62a7d1 70%, #ffffff 80%) 0% 0% repeat;
+  -webkit-background-clip: text;
+
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+
+}
+
+.chrome:after {
+  content: attr(data-text);
+
+  justify-content: center;
+  position: absolute;
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+  transform: translate(-100%);
+  z-index: -2;
+}
