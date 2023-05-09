@@ -1,11 +1,8 @@
 body {
-  /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
   background-color: black;
   overflow: hidden;
-  background-size: cover;
   width: 100%;
-  height: 30vh;
-  position: fixed;
+
 }
 
 li {
@@ -16,6 +13,7 @@ li {
 .topnav {
   background-color: transparent;
   overflow: hidden;
+  height: 3vh;
 }
 
 /* Style the links inside the navigation bar */
