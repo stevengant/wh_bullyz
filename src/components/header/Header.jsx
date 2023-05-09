@@ -10,7 +10,8 @@ function Header() {
       <div className="topnav">
         <a className="active" href="#">Home</a>
         <a href="#news">Puppies</a>
-        <a href="./html/about.html">About</a>
+        <a href="..
+        /components/about/About.jsx">About</a>
         <a href="#contact">Contact</a>
         <a href="https://www.facebook.com/profile.php?id=100088195847366" target="_blank" rel="noreferrer">
           <img
@@ -25,8 +26,13 @@ function Header() {
           />
         </a>
       </div>
-      <div className="chrome centered" data-text="WHITEHORSE BULLYZ">WHITEHORSE BULLYZ</div>
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" >
+      <div
+        className="chrome centered"
+        data-text="WHITEHORSE BULLYZ"
+      >
+        WHITEHORSE BULLYZ
+      </div>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="15px">
         <defs>
           <filter id="bevel">
             {/* <!-- filter stuff happening here --> */}
